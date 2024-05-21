@@ -1,0 +1,1494 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ 
+
+    <!-- Divide columns -->
+    <div class="container-lg">
+
+        <p>Row and Column</p>
+        <div class="row">
+            <div class="col">col</div>
+            <div class="col">col</div>
+            <div class="col">col</div>
+        </div>
+
+        <p>Divide into 12 columns</p>
+        <div class="row">
+            <div class="col">col</div>
+            <div class="col">col</div>
+            <div class="col">col</div>
+            <div class="col">col</div>
+            <div class="col">col</div>
+            <div class="col">col</div>
+            <div class="col">col</div>
+            <div class="col">col</div>
+            <div class="col">col</div>
+            <div class="col">col</div>
+            <div class="col">col</div>
+            <div class="col">col</div>
+        </div>
+
+        <p>1col = 4cols => 3cols = 12cols</p>
+        <div class="row">
+            <div class="col">col</div>
+            <div class="col">col</div>
+            <div class="col">col</div>
+        </div>
+
+        <p>Specify the col width <span>col-8</span></p>
+        <div class="row">
+            <div class="col">col</div>
+            <div class="col-8">col-8</div>
+            <div class="col">col</div>
+        </div>
+
+        <p>If the <span>col sum = 12</span> then its go to under like wrap</p>
+        <div class="row">
+            <div class="col-6">col-6</div>
+            <div class="col-6">col-6</div>
+            <div class="col">col</div>
+        </div>
+
+        <p>change <span>col</span> size using breakpoint <span>-md</span></p>
+        <div class="row">
+            <div class="col">col</div>
+            <div class="col-md-6">col</div>
+            <div class="col">col</div>
+            <div class="col-lg-3">col</div>
+        </div>
+
+        <p><span>auto</span> - it takes element width</p>
+        <div class="row">
+            <div class="col-auto">col-auto</div>
+            <div class="col-md-auto col-lg-6">col-md-auto</div>
+            <div class="col">col</div>
+        </div>
+
+        <p><span>row-cols-auto</span></p>
+        <div class="row row-cols-auto">
+            <div class="col">col</div>
+            <div class="col">columns spample</div>
+            <div class="col">Do it</div>
+            <div class="col">tata bye bye good bye</div>
+        </div>
+
+        <p>use the <span>order</span> to oredering element</p>
+        <div class="row">
+            <div class="col order-2">1 as 2</div>
+            <div class="col order-4">2 as 4</div>
+            <div class="col order-1">3 as 1</div>
+            <div class="col order-5">4 as 5</div>
+            <div class="col order-3">5 as 3</div>
+        </div>
+
+        <p>small design</p>
+        <div class="row design">
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row design">
+            <div class="col"></div>
+            <div class="col-2"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row design">
+            <div class="col"></div>
+            <div class="col-4"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row design">
+            <div class="col"></div>
+            <div class="col-6"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row design">
+            <div class="col"></div>
+            <div class="col-4"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row design">
+            <div class="col"></div>
+            <div class="col-2"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row design">
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+
+        <p>nested columns</p>
+        <div class="row">
+            <div class="col">col</div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-4">col</div>
+                    <div class="col">col</div>
+                </div>
+            </div>
+            <div class="col">col</div>
+        </div>
+
+        <p>set columns limit to parent element (row) <span>row-cols-?</span></p>
+        <div class="row row-cols-4">
+            <div class="col">col</div>
+            <div class="col">col</div>
+            <div class="col-6">col-6</div>
+            <div class="col">col</div>
+            <div class="col">col</div>
+            <div class="col">col</div>
+            <div class="col">col</div>
+            <div class="col-4">col-4</div>
+            <div class="col">col</div>
+            <div class="col">col</div>
+            <div class="col">col</div>
+            <div class="col">col</div>
+        </div>
+
+
+        <p>column gap at specific element => <span>offset-?</span></p>
+        <div class="row">
+            <div class="col">col</div>
+            <div class="col offset-2">col offset-2</div>
+            <div class="col">col</div>
+        </div>
+
+        <p>row and column gap <span>gap-?</span></p>
+        <div class="row gap-4 row-cols-3">
+            <div class="col-3">col</div>
+            <div class="col-3">col</div>
+            <div class="col-3">col</div>
+            <div class="col-3">col</div>
+            <div class="col-3">col</div>
+            <div class="col-3">col</div>
+        </div>
+
+    </div>
+
+    <!-- Align items -->
+    <section>
+        <p class="fs-1 text-danger">Align items</p>
+        <p>stretch[default] | start | center | end | baseline</p>
+
+        <div class="container">
+            <p><span>align-items-stretch</span></p>
+            <div class="row align-items-stretch bg-info">
+                <div class="col bg-warning">column</div>
+                <div class="col bg-warning">column</div>
+                <div class="col bg-warning">column</div>
+                <div class="col bg-warning">column</div>
+            </div>
+        </div>
+        <div class="container">
+            <p><span>align-items-start</span></p>
+            <div class="row align-items-start bg-info">
+                <div class="col bg-warning">column</div>
+                <div class="col bg-warning">column</div>
+                <div class="col bg-warning">column</div>
+                <div class="col bg-warning">column</div>
+            </div>
+        </div>
+        <div class="container">
+            <p><span>align-items-center</span></p>
+            <div class="row align-items-center bg-info">
+                <div class="col bg-warning">column</div>
+                <div class="col bg-warning">column</div>
+                <div class="col bg-warning">column</div>
+                <div class="col bg-warning">column</div>
+            </div>
+        </div>
+        <div class="container">
+            <p><span>align-items-end</span></p>
+            <div class="row align-items-end bg-info">
+                <div class="col bg-warning">column</div>
+                <div class="col bg-warning">column</div>
+                <div class="col bg-warning">column</div>
+                <div class="col bg-warning">column</div>
+            </div>
+        </div>
+        <div class="container">
+            <p><span>align-items-baseline</span></p>
+            <div class="row align-items-baseline bg-info">
+                <div class="col bg-warning">column</div>
+                <div class="col bg-warning">column</div>
+                <div class="col bg-warning fs-1">column</div>
+                <div class="col bg-warning">column</div>
+            </div>
+        </div>
+
+        <p>----------------------------------------</p>
+
+        <p class="fs-1 text-danger">Justify content</p>
+        <p>stretch[default] | start | center | end | baseline | space-between | space-around | space-evenly</p>
+
+        <div class="container">
+            <p><span>justify-content-start</span></p>
+            <div class="row row-cols-auto justify-content-start bg-info">
+                <div class="col bg-warning">column</div>
+                <div class="col bg-warning">column</div>
+                <div class="col bg-warning">column</div>
+                <div class="col bg-warning">column</div>
+            </div>
+        </div>
+        <div class="container">
+            <p><span>justify-content-center</span></p>
+            <div class="row row-cols-auto justify-content-center bg-info">
+                <div class="col bg-warning">column</div>
+                <div class="col bg-warning">column</div>
+                <div class="col bg-warning">column</div>
+                <div class="col bg-warning">column</div>
+            </div>
+        </div>
+        <div class="container">
+            <p><span>justify-content-end</span></p>
+            <div class="row row-cols-auto justify-content-end bg-info">
+                <div class="col bg-warning">column</div>
+                <div class="col bg-warning">column</div>
+                <div class="col bg-warning">column</div>
+                <div class="col bg-warning">column</div>
+            </div>
+        </div>
+        <div class="container">
+            <p><span>justify-content-between</span></p>
+            <div class="row row-cols-auto justify-content-between bg-info">
+                <div class="col bg-warning">column</div>
+                <div class="col bg-warning">column</div>
+                <div class="col bg-warning">column</div>
+                <div class="col bg-warning">column</div>
+            </div>
+        </div>
+        <div class="container">
+            <p><span>justify-content-around</span></p>
+            <div class="row row-cols-auto justify-content-around bg-info">
+                <div class="col bg-warning">column</div>
+                <div class="col bg-warning">column</div>
+                <div class="col bg-warning">column</div>
+                <div class="col bg-warning">column</div>
+            </div>
+        </div>
+        <div class="container">
+            <p><span>justify-content-evenly</span></p>
+            <div class="row justify-content-evenly bg-info">
+                <div class="col-2 bg-warning">column</div>
+                <div class="col-2 bg-warning">column</div>
+                <div class="col-2 bg-warning">column</div>
+                <div class="col-2 bg-warning">column</div>
+            </div>
+        </div>
+
+        <p>----------------------------------------</p>
+        <p class="fs-1 text-danger">Align self</p>
+        <p>stretch[default] | start | center | end</p>
+
+        <div class="container">
+            <p><span>align-self-?</span></p>
+            <div class="row bg-info">
+                <div class="col bg-warning align-self-start">start</div>
+                <div class="col bg-warning align-self-end">end</div>
+                <div class="col bg-warning align-self-center">center</div>
+                <div class="col bg-warning align-self-stretch">stretch</div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Padding and Margin -->
+    <div class="container">
+        <!-- MARGIN && PADDING -->
+        <!-- 
+            values 0 to 5
+            0 = 0px
+            1 = 16px * 0.25 => 4px
+            2 = 16px * 0.5  => 8px
+            3 = 16px * 1    => 16px
+            4 = 16px * 1.5  => 24px
+            5 = 16px * 3    => 48px
+ -->
+        <p> margin and padding values [0 - 5]</p>
+        <pre class="text-center h6">
+            0 = 0px
+            1 = 16px * 0.25 => 4px
+            2 = 16px * 0.5  => 8px
+             3 = 16px * 1    => 16px
+             4 = 16px * 1.5  => 24px
+             5 = 16px * 3    => 48px
+        </pre>
+        <p class="fs-3 text-danger">Margin properties [values : 0 - 5]</p>
+        <p style="text-transform: none;"><span>m-</span> allsides | <span>mx-</span> left & right | <span>my-</span> top
+            & bottom | <span>ms-</span> left(start) | <span>me-</span> right(end) | <span>mt-</span> top |
+            <span>mb-</span> bottom
+        </p>
+
+        <div class="row bg-info">
+            <div class="col-2 m-3 m-lg-0">m-3 m-lg-0</div>
+            <div class="col-2 my-2">my-2</div>
+            <div class="col-2 mx-2">mx-2</div>
+            <div class="col-2 ms-md-5 mt-5">ms-md-5 mt-5</div>
+        </div>
+
+        <hr>
+
+        <p class="fs-3 text-danger">Padding properties [values : 0 - 5]</p>
+        <p style="text-transform: none;"><span>p-</span> allsides | <span>px-</span> left & right | <span>py-</span> top
+            & bottom | <span>ps-</span> left(start) | <span>pe-</span> right(end) | <span>pt-</span> top |
+            <span>pb-</span> bottom
+        </p>
+
+        <div class="row bg-info p-3">
+            <div class="col p-0">p-0</div>
+            <div class="col p-5">p-5</div>
+            <div class="col py-3">py-3</div>
+            <div class="col px-2">px-2</div>
+            <div class="col ps-5 pe-md-5">ps-5 pe-md-5</div>
+        </div>
+
+    </div>
+
+    <!-- Guitter -->
+    <div class="p-5 m-3" id="guitter-div">
+        <p>Gutters</p>
+        <p class="pt-1 mt-4">Without gutter</p>
+        <div class="row bg-info">
+            <div class="col-6 ">
+                <div class="text p-2 bg-warning">Poovarasan</div>
+            </div>
+            <div class="col-6 ">
+                <div class="text p-2 bg-warning">Poovarasan</div>
+            </div>
+        </div>
+
+
+        <p class="pt-1 mt-4">Horizontal gutter gx-[0-5]</p>
+        <div class="row bg-info gx-5">
+            <div class="col-6 ">
+                <div class="text p-2 bg-warning">Poovarasan</div>
+            </div>
+            <div class="col-6 ">
+                <div class="text p-2 bg-warning">Poovarasan</div>
+            </div>
+        </div>
+
+        <p class="pt-1 mt-4">without gutter</p>
+        <div class="row bg-info">
+            <div class="col-6 ">
+                <div class="text p-2 bg-warning">Poovarasan</div>
+            </div>
+            <div class="col-6 ">
+                <div class="text p-2 bg-warning">Poovarasan</div>
+            </div>
+            <div class="col-6 ">
+                <div class="text p-2 bg-warning">Poovarasan</div>
+            </div>
+            <div class="col-6 ">
+                <div class="text p-2 bg-warning">Poovarasan</div>
+            </div>
+        </div>
+
+        <p class="pt-1 mt-4">No gutter g-0</p>
+        <div class="row bg-info g-0">
+            <div class="col-6 ">
+                <div class="text p-2 bg-warning">Poovarasan</div>
+            </div>
+            <div class="col-6 ">
+                <div class="text p-2 bg-warning">Poovarasan</div>
+            </div>
+            <div class="col-6 ">
+                <div class="text p-2 bg-warning">Poovarasan</div>
+            </div>
+            <div class="col-6 ">
+                <div class="text p-2 bg-warning">Poovarasan</div>
+            </div>
+        </div>
+
+
+        <p class="pt-1 mt-4">vertical gutter gy-[0-5]</p>
+        <div class="row bg-info gy-3">
+            <div class="col-6 ">
+                <div class="text p-2 bg-warning">Poovarasan</div>
+            </div>
+            <div class="col-6 ">
+                <div class="text p-2 bg-warning">Poovarasan</div>
+            </div>
+            <div class="col-6 ">
+                <div class="text p-2 bg-warning">Poovarasan</div>
+            </div>
+            <div class="col-6 ">
+                <div class="text p-2 bg-warning">Poovarasan</div>
+            </div>
+        </div>
+
+        <p class="pt-1 mt-4">Horizontal and vertical g-[0-5]</p>
+        <div class="row bg-info g-5">
+            <div class="col-6 ">
+                <div class="text p-2 bg-warning">Poovarasan</div>
+            </div>
+            <div class="col-6 ">
+                <div class="text p-2 bg-warning">Poovarasan</div>
+            </div>
+            <div class="col-6 ">
+                <div class="text p-2 bg-warning">Poovarasan</div>
+            </div>
+            <div class="col-6 ">
+                <div class="text p-2 bg-warning">Poovarasan</div>
+            </div>
+        </div>
+
+        <!-- Gutter Design -->
+        <p>Gutter Design Responsive</p>
+        <div class="row row-cols-2 g-2 row-cols-lg-5 row-cols-md-3 g-lg-4">
+            <div class="col">
+                <div class="border p-3">Poovarasan</div>
+            </div>
+            <div class="col">
+                <div class="border p-3">Poovarasan</div>
+            </div>
+            <div class="col">
+                <div class="border p-3">Poovarasan</div>
+            </div>
+            <div class="col">
+                <div class="border p-3">Poovarasan</div>
+            </div>
+            <div class="col">
+                <div class="border p-3">Poovarasan</div>
+            </div>
+            <div class="col">
+                <div class="border p-3">Poovarasan</div>
+            </div>
+            <div class="col">
+                <div class="border p-3">Poovarasan</div>
+            </div>
+            <div class="col">
+                <div class="border p-3">Poovarasan</div>
+            </div>
+            <div class="col">
+                <div class="border p-3">Poovarasan</div>
+            </div>
+            <div class="col">
+                <div class="border p-3">Poovarasan</div>
+            </div>
+            <div class="col">
+                <div class="border p-3">Poovarasan</div>
+            </div>
+            <div class="col">
+                <div class="border p-3">Poovarasan</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Colours -->
+    <div class="p-3 border border-2 border-success m-5" id="text-colors-div">
+        <h2 class="text-center">Text Colors</h2>
+
+        <!-- TEXT COLORS => text-colorName -->
+        <h4 class="text-primary">text-primary</h4>
+        <h4 class="text-primary-emphasis">text-primary-emphasis</h4>
+
+        <h4 class="text-secondary">text-secondary</h4>
+        <h4 class="text-secondary-emphasis">text-secondary-emphasis</h4>
+
+        <h4 class="text-success">text-success</h4>
+        <h4 class="text-success-emphasis">text-success-emphasis</h4>
+
+        <h4 class="text-danger">text-danger</h4>
+        <h4 class="text-danger-emphasis">text-danger-emphasis</h4>
+
+        <h4 class="text-info">text-info</h4>
+        <h4 class="text-info-emphasis">text-info-emphasis</h4>
+
+        <h4 class="text-light bg-dark">text-light - that is white</h4>
+        <h4 class="text-light-emphasis">text-light-emphasis</h4>
+
+        <h4 class="text-dark">text-dark</h4>
+        <h4 class="text-dark-emphasis">text-dark-emphasis</h4>
+
+        <h4 class="text-body">text-body</h4>
+        <h4 class="text-body-emphasis">text-body-emphasis</h4>
+        <h4 class="text-body-secondary">text-body-secondary</h4>
+        <h4 class="text-body-tertiary">text-body-tertiary</h4>
+
+        <h4 class="text-black">text-black</h4>
+        <h4 class="text-white bg-black">text-white</h4>
+
+        <h4 class="text-black-50">text-black-50</h4>
+        <h4 class="text-white-50 bg-black">text-white-50</h4>
+
+<!-- OPACITY   =>  text-opacity-percentage% -->
+        <h3 class="text-primary">This is opacity 100%</h3>
+        <h3 class="text-primary text-opacity-75">This is opacity 75%</h3>
+        <h3 class="text-primary text-opacity-50">This is opacity 50%</h3>
+        <h3 class="text-primary text-opacity-25">This is opacity 25%</h3>
+        <h3 class="text-primary" style="--bs-text-opacity:0.20">opacity in CSS variable use in style attribute --bs-text-opacity:0.20; [0 - 1]</h3>
+
+        <!-- BACKGROUND COLORS   => bg-colorName -->
+        <p>BACKGROund colors <span>bg-colourName?</span></p>
+        <div class="row border border-dark m-3 p-2 row-cols-lg-4 row-cols-md-2 row-cols-1 align-items-center fs-5 g-2" style="height: fit-content;">
+            <div class="col"><div class="text-center py-3 bg-primary">bg-primary</div></div>
+            <div class="col"><div class="text-center py-3 bg-primary-subtle">bg-primary-subtle</div></div>
+
+            <div class="col"><div class="text-center py-3 bg-secondary">bg-secondary</div></div>
+            <div class="col"><div class="text-center py-3 bg-secondary-subtle">bg-secondary-subtle</div></div>
+
+            <div class="col"><div class="text-center py-3 bg-success">bg-success</div></div>
+            <div class="col"><div class="text-center py-3 bg-success-subtle">bg-success-subtle</div></div>
+
+            <div class="col"><div class="text-center py-3 bg-danger">bg-danger</div></div>
+            <div class="col"><div class="text-center py-3 bg-danger-subtle">bg-danger-subtle</div></div>
+
+            <div class="col"><div class="text-center py-3 bg-info">bg-info</div></div>
+            <div class="col"><div class="text-center py-3 bg-info-subtle">bg-info-subtle</div></div>
+            
+            <div class="col"><div class="text-center py-3 bg-light">bg-light</div></div>
+            <div class="col"><div class="text-center py-3 bg-light-subtle">bg-light-subtle</div></div>
+            
+            <div class="col"><div class="text-center py-3 bg-warning">bg-warning</div></div>
+            <div class="col"><div class="text-center py-3 bg-warning-subtle">bg-warning-subtle</div></div>
+
+            <div class="col"><div class="text-center py-3 bg-dark text-white">bg-dark</div></div>
+            <div class="col"><div class="text-center py-3 bg-dark-subtle">bg-dark-subtle</div></div>
+            
+            <div class="col"><div class="text-center py-3 bg-body">bg-body</div></div>
+            <div class="col"><div class="text-center py-3 bg-body-secondary">bg-body-secondary</div></div>
+            <div class="col"><div class="text-center py-3 bg-body-tertiary">bg-body-tertiary</div></div>
+
+            <div class="col"><div class="text-center py-3 bg-black text-white">bg-black</div></div>
+            <div class="col"><div class="text-center py-3 bg-white">bg-white</div></div>
+            <div class="col"><div class="text-center py-3 bg-transparent">bg-transparent</div></div>
+
+        </div>
+        <!-- Backgrund Gradient  => bg-radient -->
+        <p>background gradient <span>bg-gradient</span></p>
+        <div class="row border border-dark m-3 p-2 row-cols-lg-4 row-cols-md-2 row-cols-1 align-items-center fs-5 g-2" style="height: fit-content;">
+        
+            <div class="col"><div class="text-center py-3 bg-primary">bg-primary</div></div>
+            <div class="col"><div class="text-center py-3 bg-primary bg-gradient">bg-primary bg-gradient</div></div>
+
+            <div class="col"><div class="text-center py-3 bg-secondary">bg-secondary</div></div>
+            <div class="col"><div class="text-center py-3 bg-secondary bg-gradient">bg-secondary bg-gradient</div></div>
+
+            <div class="col"><div class="text-center py-3 bg-success">bg-success</div></div>
+            <div class="col"><div class="text-center py-3 bg-success bg-gradient">bg-success bg-gradient</div></div>
+
+            <div class="col"><div class="text-center py-3 bg-danger">bg-danger</div></div>
+            <div class="col"><div class="text-center py-3 bg-danger bg-gradient">bg-danger bg-gradient</div></div>
+
+            <div class="col"><div class="text-center py-3 bg-info">bg-info</div></div>
+            <div class="col"><div class="text-center py-3 bg-info bg-gradient">bg-info bg-gradient</div></div>
+
+            <div class="col"><div class="text-center py-3 bg-warning">bg-warning</div></div>
+            <div class="col"><div class="text-center py-3 bg-warning bg-gradient">bg-warning bg-gradient</div></div>
+
+            <div class="col"><div class="text-center py-3 bg-dark text-white">bg-dark</div></div>
+            <div class="col"><div class="text-center py-3 bg-dark bg-gradient text-white">bg-dark bg-gradient</div></div>
+
+            <div class="col"><div class="text-center py-3 bg-body-tertiary border">bg-body-tertiary</div></div>
+            <div class="col"><div class="text-center py-3 bg-body-tertiary border bg-gradient">bg-body-tertiary bg-gradient</div></div>    
+    
+        </div>
+
+        <!-- BACKGROUND OPACITY  => bg-opacity-75%? -->
+        <p>background opacity <span>bg-opacity-75%?</span></p>
+        <div class="row row-cols-1">
+            <div class="col bg-success py-2">bg-opacity-100%</div>
+            <div class="col bg-success py-2 bg-opacity-75">bg-opacity-75%</div>
+            <div class="col bg-success py-2 bg-opacity-50">bg-opacity-50%</div>
+            <div class="col bg-success py-2 bg-opacity-25">bg-opacity-25%</div>
+            <div class="col bg-success py-2 bg-opacity-10">bg-opacity-10%</div>
+        </div>
+        <div class="row row-cols-1 mt-3">
+            <div class="col bg-danger py-2">bg-opacity-100%</div>
+            <div class="col bg-danger py-2 bg-opacity-75">bg-opacity-75%</div>
+            <div class="col bg-danger py-2 bg-opacity-50">bg-opacity-50%</div>
+            <div class="col bg-danger py-2 bg-opacity-25">bg-opacity-25%</div>
+            <div class="col bg-danger py-2 " style="--bs-bg-opacity:0.15;">CSS variable => --bs-bg-opacity:0.15;</div>
+            <div class="col bg-danger py-2 bg-opacity-10">bg-opacity-10%</div>
+        </div>
+
+        <!-- BORDER  => border | border-2? | border-top-0[value 0 only used to remove]  etc... -->
+        <p>border <span>border</span></p>
+        <div class="row border border-dark m-3 p-2 row-cols-lg-6 row-cols-md-4 row-cols-2 align-items-center bg-success bg-opacity-50 fs-5 g-2" style="height: fit-content;">
+            <div class="col"><div class="box bg-success">no border</div></div>
+            <div class="col"><div class="box border-start border-danger bg-success">border-start</div></div>
+            <div class="col"><div class="box border-top border-danger bg-success">border-top</div></div>
+            <div class="col"><div class="box border-end border-danger bg-success">border-end</div></div>
+            <div class="col"><div class="box border-bottom border-danger bg-success">border-bottom</div></div>
+            <div class="col"><div class="box border border-danger bg-success">border</div></div>
+            <div class="col"><div class="box border border-4 border-danger bg-success">border-4</div></div>
+            <div class="col"><div class="box border border-2 border-end-0 border-danger bg-success">border-end-0</div></div>
+            <div class="col"><div class="box border border-2 border-top-0 border-danger bg-success">border-top-0</div></div>
+            <div class="col"><div class="box border border-4 border-danger border-opacity-75 bg-success">border-opacity-75</div></div>
+        </div>
+
+
+         <!-- BORDER RADIUS   => rounded    -->
+        <p>border radius <span>rounded</span></p>
+        <div class="row border border-dark m-3 p-2 row-cols-lg-6 row-cols-md-4 row-cols-2 align-items-center bg-body-tertiary bg-opacity-50 fs-5 g-2" style="height: fit-content;">
+            <div class="col"><div class="box bg-success rounded">rounded</div></div>
+            <div class="col"><div class="box bg-success rounded-0">rounded-0</div></div>
+            <div class="col"><div class="box bg-success rounded-1">rounded-1</div></div>
+            <div class="col"><div class="box bg-success rounded-2">rounded-2</div></div>
+            <div class="col"><div class="box bg-success rounded-3">rounded-3</div></div>
+            <div class="col"><div class="box bg-success rounded-4">rounded-4</div></div>
+            <div class="col"><div class="box bg-success rounded-5">rounded-5</div></div>
+            <div class="col"><div class="box bg-success rounded-circle" style="height: 120px;width: 120px;">rounded-circle</div></div>
+            <div class="col"><div class="box bg-success rounded-bottom">rounded-bottom</div></div>
+            <div class="col"><div class="box bg-success rounded-top">rounded-top</div></div>
+            <div class="col"><div class="box bg-success rounded-start">rounded-start</div></div>
+            <div class="col"><div class="box bg-success rounded-end">rounded-end</div></div>
+            <div class="col"><div class="box bg-success rounded-pill" style="height: 70px;">rounded-pill</div></div>
+        </div> 
+
+    </div>
+
+    <!-- Heading and some HTML tags in Bootstrap -->
+    <div class="container" id="heading">
+
+        <p>Heading CLASSES <span>h1 | h2 | h3 | h4 | h5 | h6</span></p>
+        <!--    HEADING CLASSES    -->
+        <p class="h1">BS class Heading - 1</p>
+        <p class="h2">BS class Heading - 2</p>
+        <p class="h3">BS class Heading - 3</p>
+        <p class="h4">BS class Heading - 4</p>
+        <p class="h5">BS class Heading - 5</p>
+        <p class="h6">BS class Heading - 6</p>
+
+        <hr>
+
+        <!-- Display heading class  =>  display-1?  -->
+        <p>Display classes <span>display-1 | display-2 | display-3 | display-4 | display-5 | display-6</span></p>
+        <h1 class="display-1">display - 1 size 5rem</h1>
+        <h1 class="display-2">display - 2 size 4.5rem</h1>
+        <h1 class="display-3">display - 3 size 4rem</h1>
+        <h1 class="display-4">display - 4 size 3.5rem</h1>
+        <h1 class="display-5">display - 5 size 3rem</h1>
+        <h1 class="display-6">display - 6 size 2.5rem</h1>
+
+        <hr>
+        <!-- mark class -->
+        <p>using <span>mark</span> class</p>
+        <div>Hello Dear <span class="mark">Poovarasan!</span></div>
+
+        <hr>
+    <!-- Abbrevation -->
+        <p>Its is normal</p>
+        <abbr title="Hyper Text Markup Language">HTML</abbr>
+        <p>using <span>initialism</span> class for small font size</p>
+        <abbr title="Hyper Text Markup Language" class="initialism">HTML</abbr>
+
+        <hr>
+        <!-- Lead & Alignment -->
+        <p><span>lead</span> and <span>text-alignmentName</span></p>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam dolores delectus sequi voluptatum tempore est laborum alias at. Tempore in itaque enim, est illum sint voluptatum unde suscipit iure nihil.</div>
+        
+        <p><span>lead</span> changing font</p>
+        <div class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam dolores delectus sequi voluptatum tempore est laborum alias at. Tempore in itaque enim, est illum sint voluptatum unde suscipit iure nihil.</div>
+        
+        <p><span>text-center | text-lg-start | text-md-end</span> Alignment</p>
+        <div class="lead text-center text-lg-start text-md-end bg-primary-subtle p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam dolores delectus sequi voluptatum tempore est laborum alias at. Tempore in itaque enim, est illum sint voluptatum unde suscipit iure nihil.</div>
+
+
+        <!--   List   -->
+        <p>List <span>list-unstyled | list-group-item-danger</span></p>
+        <ul class="list-unstyled list-group-item-danger">
+            <li>List</li>
+            <li>List</li>
+            <li>Nested List <span>list-unstyled list-group-item-success ps-3</span>
+                <ol class="list-unstyled list-group-item-success ps-3">
+                    <li>N List</li>
+                    <li>N List</li>
+                    <li>N List</li>
+                </ol>
+            </li>
+            <li>List</li>
+            <li>List</li>
+        </ul>
+
+        <!-- list inline -->
+        <p>All list items in same line <span>list-inline | list-inline-item </span></p>
+        <ol class="list-inline">
+            <li class="list-inline-item">Menu</li>
+            <li class="list-inline-item">Contact</li>
+            <li class="list-inline-item">Address</li>
+            <li class="list-inline-item">Catagroy</li>
+            <li class="list-inline-item">Back</li>
+        </ol>
+
+        <!-- Text decoration -->
+        <p>text decoration <span>text-decoration-underline?</span></p>
+        <h4 class="text-decoration-underline">text-decoration-underline</h4>
+        <h4 class="text-decoration-line-through">text-decoration-line-through</h4>
+        <a href="#">Sample</a>
+        <a href="#" class="text-decoration-none">Sample</a>
+
+        <!-- Font Weight -->
+        <p>font weight <span>fw-bold?</span></p>
+        <div>|FONT WEIGHT - normal| dolor sit amet consectetur adipisicing elit. Sint fugiat sapiente doloribus itaque praesentium, consectetur aperiam possimus quas voluptate optio amet veniam commodi hic, incidunt distinctio odio id. Ipsa officia quia saepe! Id at porro iste molestias commodi est nam dicta repudiandae eveniet? Libero facilis neque repellendus obcaecati distinctio impedit suscipit reiciendis totam, labore facere?</div>
+        <div class="fw-bold">|FONT WEIGHT - BOLD| dolor sit amet consectetur adipisicing elit. Sint fugiat sapiente doloribus itaque praesentium, consectetur aperiam possimus quas voluptate optio amet veniam commodi hic, incidunt distinctio odio id. Ipsa officia quia saepe! Id at porro iste molestias commodi est nam dicta repudiandae eveniet? Libero facilis neque repellendus obcaecati distinctio impedit suscipit reiciendis totam, labore facere?</div>
+        <div class="fw-light">|FONT WEIGHT - LIGHT| dolor sit amet consectetur adipisicing elit. Sint fugiat sapiente doloribus itaque praesentium, consectetur aperiam possimus quas voluptate optio amet veniam commodi hic, incidunt distinctio odio id. Ipsa officia quia saepe! Id at porro iste molestias commodi est nam dicta repudiandae eveniet? Libero facilis neque repellendus obcaecati distinctio impedit suscipit reiciendis totam, labore facere?</div>
+        <div class="fw-semibold">|FONT WEIGHT - SEMIBOLD| dolor sit amet consectetur adipisicing elit. Sint fugiat sapiente doloribus itaque praesentium, consectetur aperiam possimus quas voluptate optio amet veniam commodi hic, incidunt distinctio odio id. Ipsa officia quia saepe! Id at porro iste molestias commodi est nam dicta repudiandae eveniet? Libero facilis neque repellendus obcaecati distinctio impedit suscipit reiciendis totam, labore facere?</div>
+        
+        <!-- Font Style  -->
+        <p>font style <span>fst-italic?</span></p>
+        <div class="fst-italic">|FONT STYLE - ITALIC| dolor sit amet consectetur adipisicing elit. Sint fugiat sapiente doloribus itaque praesentium, consectetur aperiam possimus quas voluptate optio amet veniam commodi hic, incidunt distinctio odio id. Ipsa officia quia saepe! Id at porro iste molestias commodi est nam dicta repudiandae eveniet? Libero facilis neque repellendus obcaecati distinctio impedit suscipit reiciendis totam, labore facere?</div>
+        
+        <!-- Font Size [1 - 6] -->
+        <p>Font Size <span>fs-2?</span></p>
+        <div class="fs-1">font size 1</div>
+        <div class="fs-2">font size 2</div>
+        <div class="fs-3">font size 3</div>
+        <div class="fs-4">font size 4</div>
+        <div class="fs-5">font size 5</div>
+        <div class="fs-6">font size 6</div>
+
+        <!-- Text Transform -->
+        <p>Text Transform <span>text-lowercase?</span></p>
+        <div>mixed Letters (Normal)</div>
+        <div class="text-lowercase">Mixed Letters to <span>text-lowercase</span></div>
+        <div class="text-uppercase">Mixed Letters to <span>text-uppercase</span></div>
+        <div class="text-capitalize">mixed Letters to <span>text-capitalize</span></div>
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+ 
+    <!-- Images Styling -->
+    <div class="container" id="images">
+        <p>Images</p>
+        <div class="row">
+            <div class="col">
+                <p><span>img-fluid</span></p>
+                <img src="./images/leaf.jpg" class="img-fluid" width="40%">
+            </div>
+            <div class="col">
+                <p><span>img-thumbnail</span></p>
+                <img src="./images/leaf.jpg" class="img-thumbnail" width="40%">
+            </div>
+        </div>
+        <p>Text inside Image and <span>float-start</span> | <span>float-end</span></p>
+
+        <div>
+
+            <div><span class="text-danger fw-bold">img-thumbnail | float-start | float-lg-end </span> adipisicing elit. Necessitatibus aspernatur numquam mollitia, adipisci sit molestias ex, voluptate error magnam quia quae atque, quod itaque officiis doloribus? Dolore, doloribus reprehenderit! Omnis exercitationem, et quidem unde fugit neque nihil, adipisci dolorum, officiis nesciunt animi facilis nam? Ducimus, eaque. Ea tenetur possimus atque, fugit <img src="./images/butterfly.jpg" class="img-thumbnail float-start float-lg-end mt-2 me-3 me-lg-0 ms-lg-2" width="200px"/> officia consequatur nobis error, optio sed voluptatibus dolore sit ratione molestiae nisi. Dolor, dicta eaque! Neque impedit esse id. Perferendis enim qui quaerat, atque, accusamus similique et, temporibus aliquid vel minima magnam dolorum? Eaque porro perferendis reprehenderit saepe dolores vero voluptate blanditiis atque aspernatur inventore! Expedita eaque aspernatur voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, ex molestias. Facilis ab provident, dolor mollitia doloribus excepturi. Unde saepe quam perspiciatis blanditiis? Labore nemo, minima sed doloribus fuga aliquam quod est cumque iusto deleniti voluptas cupiditate in tempora veniam. Enim voluptates explicabo expedita in. Perferendis, repudiandae? Fugiat, eligendi odit facilis in officiis aut repellendus, voluptatum doloribus ullam dolor magni. Quae aliquid quidem nesciunt voluptate, odit architecto eius ab asperiores dolorum accusantium tempora maxime nostrum, eveniet beatae aut deserunt nobis pariatur soluta explicabo delectus quia veritatis eos excepturi. Animi harum cupiditate adipisci necessitatibus dolorem impedit nulla ex non accusamus delectus!</div><br>
+
+            <div><span class="text-danger fw-bold">img-fluid | float-end | float-lg-start </span> adipisicing elit. Necessitatibus aspernatur numquam mollitia, adipisci sit molestias ex, voluptate error magnam quia quae atque, quod itaque officiis doloribus? Dolore, doloribus reprehenderit! Omnis exercitationem, et quidem unde fugit neque nihil, adipisci dolorum, officiis nesciunt animi facilis nam? Ducimus, eaque. Ea tenetur possimus atque, fugit <img src="./images/colored-leaf.jpg" class="img-fluid float-end float-lg-start mt-2 me-3" width="150px" /> officia consequatur nobis error, optio sed voluptatibus dolore sit ratione molestiae nisi. Dolor, dicta eaque! Neque impedit esse id. Perferendis enim qui quaerat, atque, accusamus similique et, temporibus aliquid vel minima magnam dolorum? Eaque porro perferendis reprehenderit saepe dolores vero voluptate blanditiis atque aspernatur inventore! Expedita eaque aspernatur voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, ex molestias. Facilis ab provident, dolor mollitia doloribus excepturi. Unde saepe quam perspiciatis blanditiis? Labore nemo, minima sed doloribus fuga aliquam quod est cumque iusto deleniti voluptas cupiditate in tempora veniam. Enim voluptates explicabo expedita in. Perferendis, repudiandae? Fugiat, eligendi odit facilis in officiis aut repellendus, voluptatum doloribus ullam dolor magni. Quae aliquid quidem nesciunt voluptate, odit architecto eius ab asperiores dolorum accusantium tempora maxime nostrum, eveniet beatae aut deserunt nobis pariatur soluta explicabo delectus quia veritatis eos excepturi. Animi harum cupiditate adipisci necessitatibus dolorem impedit nulla ex non accusamus delectus!</div>
+        </div>
+
+        <!-- Figure -->
+        <hr>
+        <p>Figure <span>figure | figure-caption</span></p>
+        <div class="row" style="height: fit-content">
+            <div class="col-6">
+                <figure class="figure">
+                    <img src="images/butterfly.jpg" class="img-fluid rounded" width="50%">
+                    <figcaption class="figure-caption text-primary">Sun Flower</figcaption>
+                </figure>
+            </div>
+            <div class="col-6">
+                <figure class="figure">
+                    <img src="images/butterfly.jpg" class="img-fluid rounded" width="50%">
+                    <figcaption class="figure-caption">Sun Flower</figcaption>
+                </figure>
+            </div>
+        </div>
+
+
+        <p>Image Galary with Responsive</p>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+            <div class="col" id="img-div">
+                <img src="./images/img1.jpeg" class="img-fluid"/>
+            </div>
+            <div class="col" id="img-div">
+                <img src="./images/img3.jpeg" class="img-fluid"/>
+            </div>
+            <div class="col" id="img-div">
+                <img src="./images/img5.jpeg" class="img-fluid"/>
+            </div>
+            <div class="col" id="img-div">
+                <img src="./images/img9.jpeg" class="img-fluid"/>
+            </div>
+            <div class="col" id="img-div">
+                <img src="./images/img2.jpeg" class="img-fluid" />
+            </div>
+            <div class="col" id="img-div">
+                <img src="./images/img4.jpeg" class="img-fluid"/>
+            </div>
+            <div class="col" id="img-div">
+                <img src="./images/img6.jpeg" class="img-fluid"/>
+            </div>
+            <div class="col" id="img-div">
+                <img src="./images/img7.jpeg" class="img-fluid"/>
+            </div>
+            <div class="col" id="img-div">
+                <img src="./images/img8.jpeg" class="img-fluid"/>
+            </div>
+            <div class="col" id="img-div">
+                <img src="./images/img10.jpeg" class="img-fluid"/>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tables -->
+    <p>Tables</p>
+    <div id="table" class="container bg-white">
+        <p>Normal Table without bootstrap class</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Hading</th>
+                    <th>Hading</th>
+                    <th>Hading</th>
+                    <th>Hading</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+        <p>Bootstrap Table class <span>table</span> colors : All colors but use <span>table-colorName</span> its slidly different from <span>bg-colourName</span>  </p>
+        <table class="table table-info">
+            <thead>
+                <tr>
+                    <th>Hading</th>
+                    <th>Hading</th>
+                    <th>Hading</th>
+                    <th>Hading</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+        <p>color <span>tr | td | th</span> same property <span>table-colorname</span></p>
+        <table class="table table-info">
+            <thead>
+                <tr>
+                    <th>Hading</th>
+                    <th>Hading</th>
+                    <th>Hading</th>
+                    <th>Hading</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-warning">
+                    <td>Table</td>
+                    <td>warning</td>
+                    <td>Background</td>
+                    <td>Color</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td class="table-success">table-success</td>
+                    <td class="bg-success">bg-success</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+        <p>Color to the one-after-one rows <span>table-striped</span></p>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Hading</th>
+                    <th>Hading</th>
+                    <th>Hading</th>
+                    <th>Hading</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <hr>
+        <p>Color to the one-after-one columns <span>table-striped-columns</span></p>
+        <table class="table table-striped-columns">
+            <thead>
+                <tr>
+                    <th>Hading</th>
+                    <th>Hading</th>
+                    <th>Hading</th>
+                    <th>Hading</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+        <p>Hover the rows<span>table-hover</span></p>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Hading</th>
+                    <th>Hading</th>
+                    <th>Hading</th>
+                    <th>Hading</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+/                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+        <p>Active the Table<span>table-active</span></p>
+        <table class="table">
+            <thead class=" table-active">
+                <tr>
+                    <td>Hading</td>
+                    <td>Hading</td>
+                    <td>Hading</td>
+                    <td>Hading</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td class=" table-active">Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td class=" table-active">Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+            </tbody>
+        </table>
+
+        
+        <hr>
+        <p>Create Bordered Table<span>table-bordered</span></p>
+        <table class="table table-bordered border-primary">
+            <thead>
+                <tr>
+                    <th>Hading</th>
+                    <th>Hading</th>
+                    <th>Hading</th>
+                    <th>Hading</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+        <p>Create Bootstrap Borderless Table<span>table-borderless</span></p>
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th>Hading</th>
+                    <th>Hading</th>
+                    <th>Hading</th>
+                    <th>Hading</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+        <p>Create Border<span>table-group-divided</span></p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Hading</th>
+                    <th>Hading</th>
+                    <th>Hading</th>
+                    <th>Hading</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider" style="border-top-color: green;">
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+            </tbody>
+            <tfoot class="table-group-divider" style="border-top-color: red;">
+                <tr>
+                    <td>footer</td>
+                    <td>footer</td>
+                    <td>footer</td>
+                    <td>footer</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <hr>
+        <p>Nested Table and Caption <span>caption-top | don't use => caption-bottom[default]</span></p>
+        <table class="table">
+            <caption class="caption-top">Student details</caption>
+            <thead>
+                <tr>
+                    <th>Hading</th>
+                    <th>Hading</th>
+                    <th>Hading</th>
+                    <th>Hading</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider" style="border-top-color: green;">
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>
+                        <table class="table">
+                            <caption class="text-center">Inside Student</caption>
+                            <thead>
+                                <tr>
+                                    <th>Nested Head</th>
+                                    <th>Nested Head</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Nested</td>
+                                    <td>Nested</td>
+                                </tr>
+                                <tr>
+                                    <td>Nested</td>
+                                    <td>Nested</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+        <p>Table Responsive use this calss name for div and create table inside of the div<span>table-responsive</span></p>
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered border-info-subtle text-center">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                    </tr>
+                    <tr>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                    </tr>
+                    <tr>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                    </tr>
+                    <tr>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                    </tr>
+                    <tr>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                    </tr>
+                    <tr>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                    </tr>
+                    <tr>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                    </tr>
+                    <tr>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                    </tr>
+                    <tr>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                    </tr>
+                    <tr>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                        <td>data</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap script src -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.css"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

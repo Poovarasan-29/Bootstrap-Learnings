@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+[class^="container"] {
+    background-color: rgba(117, 50, 251, 0.15);
+    border: 1px solid rgba(117, 47, 255, 0.3);
+    margin-top: 20px;
+    padding-bottom: 50px;
+}
+[class^="container"]::before {
+    content: 'XS';
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    background-color: rgb(196, 138, 250);
+    border-radius: 50px;
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+}
+
+@media screen and (min-width:576px) {
+    [class^="container"]::before {
+        content: 'SM';
+    }
+}
+
+@media screen and (min-width:768px) {
+    [class^="container"]::before {
+        content: 'MD';
+    }
+}
+
+@media screen and (min-width:992px) {
+    [class^="container"]::before {
+        content: 'LG';
+    }
+}
+
+@media screen and (min-width:1200px) {
+    [class^="container"]::before {
+        content: 'XL';
+    }
+}
+
+@media screen and (min-width:1400px) {
+    [class^="container"]::before {
+        content: 'XXL';
+    }
+}
+p {
+    font-weight: bold;
+    color: rgb(117, 47, 255);
+    padding-top: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5px;
+}
+
+[class^="row"] {
+    min-height: 150px;
+}
+
+[class^="container"] [class^="col"] {
+    padding:2rem 0px;
+    background-color: rgba(117, 50, 251, 0.15);
+    border: 1px solid rgba(117, 47, 255, 0.3);
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(54, 5, 99);
+}
+
+#guitter-div{
+    border: 2px solid #dbdbdb;
+}
+#guitter-div [class^="row"] {
+    min-height: 70px;
+}
+
+span{
+    text-transform: lowercase;
+    color: black;
+    background-color: antiquewhite;
+    padding: 3px;
+}
+.design{
+    min-height: 60px;
+}
+section{
+    /* background-color: rgb(168, 168, 168); */
+    padding: 50px 0;
+}
+.box{
+    height: 120px;
+    text-align: center;
+}
+#img-div{
+    padding: 0px;
+    background-color: none;
+    border:none;
+    font-size: 0px;
+    text-align: center;
+    color: rgb(54, 5, 99);
+}
